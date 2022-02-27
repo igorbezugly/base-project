@@ -1,0 +1,62 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(rel='stylesheet' href='./assets/styles/styles.css')
+body  
+  
+  //- include ./sections/card.pug
+  //- .hero
+  //-   h1= herosection.title
+  //-   p= herosection.subtitle
+  //-   .wrap
+  //-     each card in herosection.cards
+  //-       +Card(card.title, card.descr, card.link, card.img, card.power)
+
+  include ./sections/header/header.pug
+  include ./sections/hero/hero.pug
+  include ./sections/features/features.pug
+  include ./sections/laptop/laptop.pug
+  include ./sections/subscribe/subscribe.pug
+  include ./sections/partners/partners.pug
+  include ./sections/testimonials/testimonials.pug
+  include ./sections/pricing/pricing.pug
+  include ./sections/contact/contact.pug
+  include ./sections/footer/footer.pug
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  //- - var titles = ['abc', 'def', 'ghi']
+
+  //- mixin Card(a, descr)
+  //-   .card
+  //-     h1 = a
+  //-     p = descr 
+
+  //- each title in titles
+  //-   +Card (title, '123', '456')
+  
+  //- +Card (titles[0], '123', '456')

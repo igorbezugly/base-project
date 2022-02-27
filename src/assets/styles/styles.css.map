@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,MAAM,CAAC;EACL,UAAU,EAAE,wDAAwD;CAErE;;AUHD,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;CAChB;;AAED,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,MAAM;EACjB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAM;CACf;;AEdD,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,SAAS;EAClB,gBAAgB,EDKT,OAAO;ECJd,KAAK,EDEG,IAAI;CCIb;;AATD,AAKE,MALI,AAKH,MAAM,CAAC;EACN,gBAAgB,EDDV,IAAI;ECEV,KAAK,EDDE,OAAO;CCEf;;AbMH,UAAU;EACR,WAAW,EAAE,QAAQ;EACrB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,uCAAuC;;;AAG9C,UAAU;EACR,WAAW,EAAE,QAAQ;EACrB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,oCAAoC",
+    "sources": [
+        "styles.scss",
+        "../../sections/header/_header.scss",
+        "../../sections/hero/_hero.scss",
+        "../../sections/contact/_contact.scss",
+        "../../sections/features/_features.scss",
+        "../../sections/footer/_footer.scss",
+        "../../sections/laptop/_laptop.scss",
+        "../../sections/partners/_partners.scss",
+        "../../sections/pricing/_pricing.scss",
+        "../../sections/subscribe/_subscribe.scss",
+        "../../sections/testimonials/_testimonials.scss",
+        "general/_general.scss",
+        "general/_var.scss",
+        "general/_button.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

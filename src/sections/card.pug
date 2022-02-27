@@ -1,0 +1,13 @@
+mixin Card(title, descr, link, logo= 'icon', power)
+  .card 
+    .header
+      .logopic= logo
+      h3= title
+    p= descr
+
+    //- if power > 70
+    //-   span.power Power #{power}
+
+    h1.card__power(class= power > 70 ? 'card__power-red' : 'card__power-green') Power #{power}
+    
+    a(href= link) Read more 

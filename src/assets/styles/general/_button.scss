@@ -1,0 +1,10 @@
+button {
+  padding: 16px 58px;
+  background-color: $c-blue;
+  color: $c-white;
+
+  &:hover {
+    background-color: $c-white;
+    color: $c-active;
+  }
+}

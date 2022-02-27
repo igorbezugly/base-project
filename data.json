@@ -1,0 +1,105 @@
+{
+  "cards": [
+    {
+      "title": "Webflow Development",
+      "descr": "Lorem ipsum dolor",
+      "link": "#",
+      "img": "path",
+      "power": "100"
+    },
+    {
+      "title": "Webflow Development",
+      "descr": "Lorem ipsum dolor",
+      "link": "#",
+      "img": "path",
+      "power": "100"
+    },
+    {
+      "title": "Webflow Development",
+      "descr": "Lorem ipsum dolor",
+      "link": "#",
+      "img": "path",
+      "power": "100"
+    },
+    {
+      "title": "Webflow Development",
+      "descr": "Lorem ipsum dolor",
+      "link": "#",
+      "img": "path",
+      "power": "100"
+    }
+  ],
+
+  "portfolio": [
+    {
+      "title": "assas",
+      "descr": "Lorem ipsum dolor",
+      "link": "#",
+      "img": "path"
+    },
+    {
+      "title": "awdawdwf",
+      "descr": "Lorem ipsum dolor",
+      "link": "#",
+      "img": "path"
+    },
+    {
+      "title": "srhreheab",
+      "descr": "Lorem ipsum dolor",
+      "link": "#",
+      "img": "path"
+    },
+    {
+      "title": "erhbwsrfdabv",
+      "descr": "Lorem ipsum dolor",
+      "link": "#",
+      "img": "path"
+    }
+  ],
+
+  "herosection": {
+    "title": "Hero section",
+    "subtitle": "hfehowfnqoipwf",
+    "cards": [
+      {
+        "title": "Webflow Development",
+        "descr": "Lorem ipsum dolor",
+        "link": "#",
+        "img": "path",
+        "power": 100
+      },
+      {
+        "title": "1234567890",
+        "descr": "gwkhkqehiljq;ejo;qj;ojo;qjoepgjqighoiqhgi",
+        "link": "#",
+        "img": "path",
+        "power": 50
+      }
+    ]
+  },
+
+
+
+  "navigation": [
+    {
+      "label": "Home",
+      "link": "#"
+    },
+    {
+      "label": "Product",
+      "link": "#"
+    },
+    {
+      "label": "Pricing",
+      "link": "#"
+    },
+    {
+      "label": "About",
+      "link": "#"
+    },
+    {
+      "label": "Contact",
+      "link": "#"
+    }
+  ]
+}

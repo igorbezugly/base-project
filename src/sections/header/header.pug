@@ -1,0 +1,8 @@
+header
+  include ./logo.svg
+  img.header__img(src="./logo.svg", alt="logo")
+  div.header__flexbox
+    nav
+      each link in navigation
+        +Link (link.title)
+    input.header__input(type="text", value="Your Email")

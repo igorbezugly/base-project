@@ -5,6 +5,10 @@ const cleanCSS = require('gulp-clean-css');
 const del = require('del');
 const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass')(require('sass'));
+const pug = require('gulp-pug');
+const Fs = require('fs');
+
+const data = JSON.parse(Fs.readFileSync('./data.json'));
 
 function browsersync() {
     browserSync.init({
@@ -15,9 +19,19 @@ function browsersync() {
 }
 
 function html() {
-    return src('src/index.html')
+    return src('src/index.pug')
+        .pipe (pug({
+            pretty:true,
+            locals: data || {}
+        }))
         .pipe(dest('build'))
         .pipe(browserSync.stream())
+}
+
+function js() {
+    return src('src/script.js')
+        .pipe(dest('build'))
+        .prependListener(browserSync.stream())
 }
 
 function css() {
@@ -51,14 +65,15 @@ function clear() {
 
 
 function startWatch() {
-    watch('src/index.html', html)
+    watch('src/**/*.pug', html)
     watch('src/assets/styles/**/*.scss', css)
     watch('src/assets/images/**/*', images)
     watch('src/assets/fonts/**/*', fonts)
+    watch('script.js', js)
 }
 
-exports.dev = parallel(browserSync, startWatch, html, images, fonts, css)
-exports.build = series(clear, parallel(html, images, fonts, css))
+exports.dev = parallel(browserSync, startWatch, html, images, fonts, css, js)
+exports.build = series(clear, parallel(html, images, fonts, css, js))
 
 
 exports.default = series(browserSync, startWatch, html, images, fonts, css)
