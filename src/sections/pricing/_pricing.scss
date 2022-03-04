@@ -1,0 +1,91 @@
+.pricing {
+  width: 100%;
+  padding-top: 110px;
+  padding-bottom: 100px;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__span16 {
+    max-width: 300px;
+    font-size: $f-16;
+    line-height: $l-20;
+    font-weight: $f-bold;
+    margin-top: 27px;
+    margin-bottom: 90px;
+    text-align: center;
+  }
+
+  &__cardbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 50px;
+
+    &__card {
+      width: 335px;
+      height: 310px;
+      padding: 40px;
+      border: 1px solid #dedede;
+      border-radius: 10px;
+      box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+
+      .pricing__text {
+        font-size: $f-12;
+        font-weight: $f-bold;
+        line-height: $l-20;
+      }
+
+      &:hover {
+        background: linear-gradient(40deg, #EF2779 1%, #7834BE 99%);
+
+        .pricing__button {
+          background-color: $c-white;
+          color: $c-blue;
+
+          &:active {
+            background-color: red;
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        .pricing__price {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &__span22 {
+    font-size: $f-22;
+    font-weight: $f-bold;
+    line-height: $l-33;
+    text-align: left;
+  }
+
+  &__innerflex {
+    max-width: 150px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+    display: grid;
+    grid-template-areas: 
+    "icon buck"
+    "icon text";
+
+    .pricing__price {
+      grid-area: icon;
+      font-size: 55px;
+      line-height: 66px;
+      font-weight: 900;
+    }
+    .pricing__span22 {
+      grid-area: buck;
+    }
+    .pricing__text {
+      grid-area: text;
+    }
+  }
+}

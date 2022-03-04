@@ -1,0 +1,52 @@
+.laptop {
+  width: 100%;
+  padding-top: 110px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  &__span16 {
+    font-size: $f-16;
+    text-align: center;
+    line-height: $l-20;
+    color: $c-second;
+    font-weight: $f-bold;
+    margin-top: 27px;
+    margin-bottom: 90px;
+    max-width: 300px;
+  }
+
+  &__button {
+    font-size: $f-22;
+    line-height: $l-33;
+    font-weight: $f-bold;
+    margin-bottom: 114px;
+    
+    &:hover {
+      background-color: $c-main;
+      color: $c-blue;
+    }
+    &:active {
+      background-color: red;
+      color: $c-blue;
+    }
+  }
+
+  &__img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:740px) {
+  .laptop__img {
+    width: 100%;
+  }
+}

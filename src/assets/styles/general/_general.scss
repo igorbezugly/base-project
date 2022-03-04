@@ -6,6 +6,24 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  font-family: $f-main;
+  font-weight: $f-regular;
+}
+
+
+h1 {
+  font-size: 55px;
+  line-height: 66px;
+  color: $c-white;
+  font-weight: $f-h1;
+}
+
+h2 {
+  font-size: $f-46;
+  line-height: $l-57;
+  color: $c-main;
+  font-weight: $f-regular;
 }
 
 body {

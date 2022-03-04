@@ -1,0 +1,26 @@
+mixin Media(iconlink, link= "#", alt)
+  a.contact__link(href=link)
+    img.contact__icon(src=iconlink, alt=alt)
+
+.contact
+  h2 Contact Us 
+  .contact__span16 Most calendars are designed for teams. Slate is designed for freelancers
+  .contact__flexbox
+    .contact__inputbox
+      input.contact__inputbox__input(type="text", placeholder="Your Name")
+      input.contact__inputbox__input(type="text", placeholder="Your Email")
+      textarea.contact__inputbox__input(type="text", placeholder="Your Message")
+      button.contact__inputbox__button Send
+    .contact__adressbox
+      .contact__adressflex
+        img.contact__icon(src="../src/sections/contact/mapicon.svg", alt="point")
+        .contact__adressflex__text 6386 Spring St undefined Anchorage, Georgia 12473 United States
+        img.contact__icon(src="../src/sections/contact/phone.svg", alt="phone")
+        .contact__adressflex__text (843) 555-0130
+        img.contact__icon(src="../src/sections/contact/mail.svg", alt="mail")
+        .contact__adressflex__text willie.jennings@example.com
+      .contact__media
+        each icon in media
+          +Media(icon.iconlink, icon.link, icon.alt)
+
+        

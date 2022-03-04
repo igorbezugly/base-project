@@ -1,85 +1,4 @@
 {
-  "cards": [
-    {
-      "title": "Webflow Development",
-      "descr": "Lorem ipsum dolor",
-      "link": "#",
-      "img": "path",
-      "power": "100"
-    },
-    {
-      "title": "Webflow Development",
-      "descr": "Lorem ipsum dolor",
-      "link": "#",
-      "img": "path",
-      "power": "100"
-    },
-    {
-      "title": "Webflow Development",
-      "descr": "Lorem ipsum dolor",
-      "link": "#",
-      "img": "path",
-      "power": "100"
-    },
-    {
-      "title": "Webflow Development",
-      "descr": "Lorem ipsum dolor",
-      "link": "#",
-      "img": "path",
-      "power": "100"
-    }
-  ],
-
-  "portfolio": [
-    {
-      "title": "assas",
-      "descr": "Lorem ipsum dolor",
-      "link": "#",
-      "img": "path"
-    },
-    {
-      "title": "awdawdwf",
-      "descr": "Lorem ipsum dolor",
-      "link": "#",
-      "img": "path"
-    },
-    {
-      "title": "srhreheab",
-      "descr": "Lorem ipsum dolor",
-      "link": "#",
-      "img": "path"
-    },
-    {
-      "title": "erhbwsrfdabv",
-      "descr": "Lorem ipsum dolor",
-      "link": "#",
-      "img": "path"
-    }
-  ],
-
-  "herosection": {
-    "title": "Hero section",
-    "subtitle": "hfehowfnqoipwf",
-    "cards": [
-      {
-        "title": "Webflow Development",
-        "descr": "Lorem ipsum dolor",
-        "link": "#",
-        "img": "path",
-        "power": 100
-      },
-      {
-        "title": "1234567890",
-        "descr": "gwkhkqehiljq;ejo;qj;ojo;qjoepgjqighoiqhgi",
-        "link": "#",
-        "img": "path",
-        "power": 50
-      }
-    ]
-  },
-
-
-
   "navigation": [
     {
       "label": "Home",
@@ -99,6 +18,116 @@
     },
     {
       "label": "Contact",
+      "link": "#"
+    }
+  ],
+
+  "features": [
+    {
+      "iconlink": "../src/sections/features/icon1.svg",
+      "title": "The best products start with Sketch",
+      "text": "Slate helps you see how many more days you need to work to reach your financial goal."
+    },
+    {
+      "iconlink": "../src/sections/features/icon2.svg",
+      "title": "Fastest way to organize",
+      "text": "Slate helps you see how many more days you need to work to reach your financial goal."
+    },
+    {
+      "iconlink": "../src/sections/features/icon3.svg",
+      "title": "Work better together",
+      "text": "Slate helps you see how many more days you need to work to reach your financial goal."
+    }
+  ],
+
+  "partners": [
+    {
+      "client": "Client name",
+      "icon": "../src/sections/partners/hex.svg",
+      "text": "Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+    },
+    {
+      "client": "Client name",
+      "icon": "../src/sections/partners/android.svg",
+      "text": "Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+    },
+    {
+      "client": "Client name",
+      "icon": "../src/sections/partners/mountain.svg",
+      "text": "Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+    },
+    {
+      "client": "Client name",
+      "icon": "../src/sections/partners/mountain.svg",
+      "text": "Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+    },
+    {
+      "client": "Client name",
+      "icon": "../src/sections/partners/airbnb.svg",
+      "text": "Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+    },
+    {
+      "client": "Client name",
+      "icon": "../src/sections/partners/appstore.svg",
+      "text": "Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+    }
+  ],
+
+  "pricing": [
+    {
+      "title": "Free",
+      "text": "Organize across all apps by hand",
+      "price": " 0"
+    },
+    {
+      "title": "Standard",
+      "text": "Organize across all apps by hand",
+      "price": "10"
+    },
+    {
+      "title": "Business",
+      "text": "Organize across all apps by hand",
+      "price": "99"
+    }
+  ],
+
+  "media": [
+    {
+      "iconlink": "../src/sections/contact/twicon.svg",
+      "link": "#",
+      "alt": " twitter"
+    },
+    {
+      "iconlink": "../src/sections/contact/fbicon.svg",
+      "link": "#",
+      "alt": " twitter"
+    },
+    {
+      "iconlink": "../src/sections/contact/liicon.svg",
+      "link": "#",
+      "alt": " twitter"
+    }
+  ],
+
+  "footerlinks": [
+    {
+      "title": "Eleanor Edwards",
+      "link": "#"
+    },
+    {
+      "title": "Ted Robertson",
+      "link": "#"
+    },
+    {
+      "title": "Anette Russel",
+      "link": "#"
+    },
+    {
+      "title": "Jennie Mckinney",
+      "link": "#"
+    },
+    {
+      "title": "Gloria Richards",
       "link": "#"
     }
   ]

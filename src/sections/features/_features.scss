@@ -1,0 +1,65 @@
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding-top: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 90px;
+
+  &__cardtitle {
+    font-size: $f-22;
+    line-height: $l-33;
+    color: $c-main;
+    font-weight: $f-bold;
+  }
+
+  h2 {
+    margin-top: 17px;
+    margin-bottom: 27px;
+  }
+
+  &__span16 {
+    font-size: $f-16;
+    text-align: center;
+    line-height: $l-20;
+    color: $c-second;
+    font-weight: $f-bold;
+    margin-bottom: 100px;
+    max-width: 300px;
+  }
+
+  &__cardbox {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 52px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 255px;
+
+    &__cardflex {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+  }
+
+  &__text {
+    font-size: $f-18;
+    line-height: $l-27;
+    color: $c-second;
+    font-weight: $f-regular;
+    margin-bottom: 50px;
+  }
+}

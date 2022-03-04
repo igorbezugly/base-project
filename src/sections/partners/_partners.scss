@@ -1,0 +1,83 @@
+.partners {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 130px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 80px;
+  text-align: center;
+
+  &__span16 {
+    max-width: 300px;
+    font-size: $f-16;
+    line-height: $l-20;
+    font-weight: $f-bold;
+    color: $c-second;
+    margin-top: 27px;
+    margin-bottom: 104px;
+  }
+
+  &__cardbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 52px;
+    max-width: 850px;
+
+    &__card {
+      width: 238px;
+      height: 346px;
+      padding: 10px;
+      // background-color: aquamarine;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+
+      h5 {
+        font-size: $f-12;
+        line-height: $l-20;
+        color: $c-second;
+      }
+    }
+  }
+
+  &__icon {
+    height: 123px;
+  }
+
+  &__text {
+    text-align: center;
+    font-weight: $f-regular;
+    font-size: $f-18;
+    line-height: $l-27;
+    color: $c-second;
+  }
+
+  &__button {
+    margin-top: 80px;
+
+    &:hover {
+      background-color: $c-main;
+    }
+    &:active {
+      background-color: red;
+    }
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .partners__cardbox__card {
+    &:nth-child(4) {
+      display: none;
+    }
+    &:nth-child(5) {
+      display: none;
+    }
+    &:nth-child(6) {
+      display: none;
+    }
+  }
+}

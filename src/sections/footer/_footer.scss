@@ -1,0 +1,51 @@
+.footer {
+  width: 100%;
+  padding: 120px 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+
+  &__nav {
+    width: 186px;
+    height: 267px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__span22 {
+      font-size: $f-22;
+      line-height: $l-33;
+      font-weight: $f-bold;
+      color: $c-main;
+      margin-top: 10px;
+      margin-bottom: 9px;
+    }
+
+    &__link {
+      font-size: $f-15;
+      line-height: $l-25;
+      color: $c-main;
+    }
+  }
+
+  &__map {
+    width: 472px;
+    height: 247px;
+    border: none;
+    border-radius: 22px;
+    overflow: hidden;
+  }
+  .contact__adressflex__text {
+    color: $c-main;
+  }
+}
+
+@media screen and (max-width: 1128px) {
+  .footer__nav {
+    align-items: center;
+  }
+}

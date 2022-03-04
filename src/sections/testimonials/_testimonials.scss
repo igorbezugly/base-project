@@ -1,0 +1,50 @@
+.testimonials {
+  width: 100%;
+  padding-top: 110px;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+
+  &__span16 {
+    font-size: $f-16;
+    line-height: $l-20;
+    font-weight: $f-bold;
+    color: $c-second;
+    max-width: 680px;
+  }
+
+  &__img {
+    margin-top: 30px;
+  }
+
+  &__flexbox {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 13px;
+    align-items: flex-start;
+
+    &__text {
+      text-align: left;
+      max-width: 120px;
+      font-size: $f-15;
+      line-height: $l-27;
+      color: $c-second;
+    }
+  }
+}
+
+.testimonials__button {
+  margin-top: 20px;
+  
+  &:hover {
+    background-color: $c-main;
+  }
+  &:active {
+    background-color: red;
+  }
+}

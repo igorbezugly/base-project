@@ -2,6 +2,9 @@ button {
   padding: 16px 58px;
   background-color: $c-blue;
   color: $c-white;
+  font-weight: $f-bold;
+  border-radius: 35px;
+  border: none;
 
   &:hover {
     background-color: $c-white;

@@ -1,3 +1,4 @@
+@import "./general/var";
 @import "../../sections/header/header";
 @import "../../sections/hero/hero";
 @import "../../sections/contact/contact";
@@ -9,17 +10,22 @@
 @import "../../sections/subscribe/subscribe";
 @import "../../sections/testimonials/testimonials";
 @import "./general/general";
-@import "./general/var";
 @import "./general/button";
 
 @font-face {
   font-family: 'Roboto';
   font-weight: 400;
-  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto/Roboto-Regular.ttf); 
 }
 
 @font-face {
   font-family: 'Roboto';
   font-weight: 700;
   src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  src: url(../fonts/Roboto/Roboto-Black.ttf);
 }

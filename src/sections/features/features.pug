@@ -1,0 +1,34 @@
+mixin Featurecard(iconlink, title, text)
+  .features__card
+    .features__card__cardflex
+      img.features__icon(src=iconlink, alt="icon")
+      span.features__cardtitle= title 
+    span.features__text= text
+
+.features
+  span.features__cardtitle At your fingertips
+  h2 Features
+  span.features__span16 Most calendars are designed for teams. Slate is designed for freelancers
+  .features__cardbox
+    each abc in features
+      +Featurecard (abc.iconlink, abc.title, abc.text)
+    
+    
+    //- .features__card
+    //-   .features__card__cardflex
+    //-     img.features__icon(src="../src/sections/features/icon1.svg", alt="icon")
+    //-     span.features__cardtitle The best products start with Sketch 
+    //-   span.features__text Slate helps you see how many more days you need to work to reach your financial goal.
+    
+    //- .features__card
+    //-   .features__card__cardflex
+    //-     img.features__icon(src="../src/sections/features/icon2.svg", alt="icon")
+    //-     span.features__cardtitle Fastest way to organize 
+    //-   span.features__text Slate helps you see how many more days you need to work to reach your financial goal.
+
+    //- .features__card
+    //-   .features__card__cardflex
+    //-     img.features__icon(src="../src/sections/features/icon1.svg", alt="icon")
+    //-     span.features__cardtitle Work better together 
+    //-   span.features__text Slate helps you see how many more days you need to work to reach your financial goal.
+

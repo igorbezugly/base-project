@@ -1,0 +1,13 @@
+mixin Partner(client, icon, text)
+  .partners__cardbox__card
+    h5= client
+    img.partners__icon(src=icon, alt="icon")
+    .partners__text= text
+
+.partners
+  h2 Partners 
+  .partners__span16 Most calendars are designed for teams. Slate is designed for freelancers
+  .partners__cardbox
+    each box in partners
+      +Partner (box.client, box.icon, box.text)
+  button.partners__button Try For Free

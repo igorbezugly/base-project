@@ -1,2 +1,21 @@
+mixin Footer(title, link= "#")
+  a.footer__nav__link(href=link)= title 
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16598.382287822293!2d-122.41096631738336!3d37.76892317210448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2z0KHQsNC9LdCk0YDQsNC90YbQuNGB0LrQviwg0JrQsNC70LjRhNC-0YDQvdC40Y8sINCh0KjQkA!5e0!3m2!1sru!2sby!4v1645721249670!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+.footer 
+  .footer__nav
+    .footer__nav__span22 Pages
+    each fff in footerlinks
+      +Footer(fff.title, fff.link)
+  .footer__map
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16598.382287822293!2d-122.41096631738336!3d37.76892317210448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2z0KHQsNC9LdCk0YDQsNC90YbQuNGB0LrQviwg0JrQsNC70LjRhNC-0YDQvdC40Y8sINCh0KjQkA!5e0!3m2!1sru!2sby!4v1645721249670!5m2!1sru!2sby" width="472" height="247" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  .contact__adressbox
+    .contact__adressflex
+      img.contact__icon(src="../src/sections/contact/mapicon.svg", alt="point")
+      .contact__adressflex__text 6386 Spring St undefined Anchorage, Georgia 12473 United States
+      img.contact__icon(src="../src/sections/contact/phone.svg", alt="phone")
+      .contact__adressflex__text (843) 555-0130
+      img.contact__icon(src="../src/sections/contact/mail.svg", alt="mail")
+      .contact__adressflex__text willie.jennings@example.com
+    .contact__media
+      each icon in media
+        +Media(icon.iconlink, icon.link, icon.alt)

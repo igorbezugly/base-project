@@ -1,0 +1,46 @@
+mixin Price(title, text, price)
+  .pricing__cardbox__card
+    .pricing__span22= title
+    .pricing__text= text
+    .pricing__innerflex
+      .pricing__price= price 
+      .pricing__span22 $
+      .pricing__text Per Month
+    button.pricing__button Order Now
+
+.pricing
+  h2 Pricing 
+  .pricing__span16 Most calendars are designed for teams. Slate is designed for freelancers
+  .pricing__cardbox
+    each price in pricing 
+      +Price (price.title, price.text, price.price)
+
+
+
+
+
+
+    //- .pricing__cardbox__card
+    //-   .pricing__span22 title
+    //-   .pricing__text text
+    //-   .pricing__innerflex
+    //-     .pricing__price 99 
+    //-     .pricing__span22 $
+    //-     .pricing__text Per Month
+    //-   button.pricing__button Order Now
+    //- .pricing__cardbox__card
+    //-   .pricing__span22 title
+    //-   .pricing__text text
+    //-   .pricing__innerflex
+    //-     .pricing__price 99 
+    //-     .pricing__span22 $
+    //-     .pricing__text Per Month
+    //-   button.pricing__button Order Now
+    //- .pricing__cardbox__card
+    //-   .pricing__span22 title
+    //-   .pricing__text text
+    //-   .pricing__innerflex
+    //-     .pricing__price 99 
+    //-     .pricing__span22 $
+    //-     .pricing__text Per Month
+    //-   button.pricing__button Order Now

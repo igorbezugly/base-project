@@ -1,8 +1,24 @@
-header
-  include ./logo.svg
-  img.header__img(src="./logo.svg", alt="logo")
-  div.header__flexbox
-    nav
-      each link in navigation
-        +Link (link.title)
-    input.header__input(type="text", value="Your Email")
+mixin Link(label, link= '#')
+  a.header__link(href=link)= label
+
+div.heroheader
+  header
+    img.header__img(src="../src/sections/header/logo.svg" alt="logo")
+    div.header__flexbox
+      nav
+        each link in navigation
+          +Link (link.label, link.link)
+      input.header__input(type="text", placeholder="Your Email")
+      button.header__button Subscribe
+      input.header__checkbox(type="checkbox" name="burger")
+    label(for="burger")
+      img.header__burgericon(src="../src/sections/header/burger.svg" alt="burger")
+ 
+  hero
+    img.hero__img(src="../src/sections/header/flatbrowser.svg", alt="browser")
+    div.hero__flexbox
+      h1 We focus on ergonomics
+      span.hero__text Most calendars are designed for teams. Slate is designed for freelancers
+      img.hero__imgmini(src="../src/sections/header/mini.svg" alt="browser")
+      button.hero__button Try For Free
+    
